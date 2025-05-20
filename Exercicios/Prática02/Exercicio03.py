@@ -1,0 +1,7 @@
+print("nota 1")
+nota1 = float(input())
+print("nota 2")
+nota2 = float(input())
+print("nota 3")
+nota3 = float(input())
+print("nota 1 é", nota1, "nota 2 é", nota2, "nota 3 é", nota3, "a média é", round((nota1 + nota2 + nota3) / 3, 2))

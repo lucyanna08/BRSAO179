@@ -1,0 +1,8 @@
+print("informe o valor para real")
+real = float(input())
+print("informe a taxa para dolar")
+taxadolar = float(input())
+print("informe a taxa para euro")
+taxaeuro = float(input())
+print("o valor em dolar é",round( real / taxadolar,2))
+print("o valor em euro é",round( real / taxaeuro,2))

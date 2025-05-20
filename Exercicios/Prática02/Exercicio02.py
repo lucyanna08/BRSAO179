@@ -1,0 +1,8 @@
+print("informe o nome do produto")
+nomedoproduto = input()
+print("informe o preço original do produto")
+precooriginal = float(input())
+print("informe o percentual de desconto")
+percentualdesconto = float(input())
+print("o valor final do produto é", round(precooriginal - (precooriginal * percentualdesconto / 100), 2))
+print("o valor do desconto é", round(precooriginal * percentualdesconto / 100, 2))
