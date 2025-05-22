@@ -1,27 +1,23 @@
-def main():
-    pares = 0
-    impares = 0
+pares = 0
+impares = 0
     
-    while True:
-        entrada = input("Digite um número inteiro ou 'fim' para encerrar: ")
+while True:
+    entrada = input("Digite um número inteiro ou 'fim' para encerrar: ")
         
-        if entrada.lower() == 'fim':
-            break
+    if entrada.lower() == 'fim':
+        break
         
-        try:
-            numero = int(entrada)
-            if numero % 2 == 0:
-                print(f"{numero} é par.")
-                pares += 1
-            else:
-                print(f"{numero} é ímpar.")
-                impares += 1
-        except ValueError:
-            print("Erro: Por favor, insira um número inteiro válido.")
+    try:
+        numero = int(entrada)
+        if numero % 2 == 0:
+            print(f"{numero} é par.")
+            pares += 1
+        else:
+            print(f"{numero} é ímpar.")
+            impares += 1
+    except ValueError:
+        print("Erro: Por favor, insira um número inteiro válido.")
     
-    print("\nResumo:")
-    print(f"Total de números pares: {pares}")
-    print(f"Total de números ímpares: {impares}")
-
-if __name__ == "__main__":
-    main()
+print("\nResumo:")
+print(f"Total de números pares: {pares}")
+print(f"Total de números ímpares: {impares}")
